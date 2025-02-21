@@ -1,0 +1,66 @@
+---
+import Post from "@components/Post.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <h2 class="text-3xl text-center p-3">Mis posts</h2>
+  <div
+    class="grid grid-cols-3 max-1730:grid-cols-4 gap-3 place-items-center items-start"
+  >
+    <Post
+      post={{
+        title: "Cambio Climático",
+        description:
+          "El planeta enfrenta temperaturas extremas, tormentas más fuertes y un aumento del nivel del mar.",
+        content:
+          "El cambio climático está alterando los patrones climáticos en todo el mundo, provocando olas de calor más intensas, tormentas más fuertes y un aumento en el nivel del mar. La acción global es necesaria para mitigar sus efectos.",
+      }}
+    />
+    <Post
+      post={{
+        title: "Carrera Espacial",
+        description:
+          "Nuevas misiones buscan explorar Marte, mejorar la tecnología satelital y expandir la presencia humana",
+        content:
+          "Las agencias espaciales y empresas privadas están impulsando una nueva era de exploración espacial. Desde misiones tripuladas a Marte hasta satélites avanzados, el futuro del espacio promete avances tecnológicos y descubrimientos sin precedentes.",
+      }}
+    />
+    <Post
+      post={{
+        title: "Vida Productiva",
+        description:
+          "Organizar tareas, evitar distracciones y mantener hábitos saludables aumenta la eficiencia en el trabajo",
+        content:
+          "La productividad no se trata solo de hacer más en menos tiempo, sino de trabajar de manera eficiente y mantener el equilibrio. Establecer rutinas, evitar distracciones y priorizar tareas son claves para mejorar el rendimiento diario.",
+      }}
+    />
+    <Post
+    post={{
+      title: "Cambio Climático",
+      description:
+        "El planeta enfrenta temperaturas extremas, tormentas más fuertes y un aumento del nivel del mar.",
+      content:
+        "El cambio climático está alterando los patrones climáticos en todo el mundo, provocando olas de calor más intensas, tormentas más fuertes y un aumento en el nivel del mar. La acción global es necesaria para mitigar sus efectos.",
+    }}
+  />
+  <Post
+    post={{
+      title: "Carrera Espacial",
+      description:
+        "Nuevas misiones buscan explorar Marte, mejorar la tecnología satelital y expandir la presencia humana",
+      content:
+        "Las agencias espaciales y empresas privadas están impulsando una nueva era de exploración espacial. Desde misiones tripuladas a Marte hasta satélites avanzados, el futuro del espacio promete avances tecnológicos y descubrimientos sin precedentes.",
+    }}
+  />
+  <Post
+    post={{
+      title: "Vida Productiva",
+      description:
+        "Organizar tareas, evitar distracciones y mantener hábitos saludables aumenta la eficiencia en el trabajo",
+      content:
+        "La productividad no se trata solo de hacer más en menos tiempo, sino de trabajar de manera eficiente y mantener el equilibrio. Establecer rutinas, evitar distracciones y priorizar tareas son claves para mejorar el rendimiento diario.",
+    }}
+  />
+  </div>
+</Layout>

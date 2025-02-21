@@ -1,0 +1,19 @@
+---
+const {post: {title, description, content}} = Astro.props;
+---
+
+<article class="bg-slate-800 text-white max-w-sm rounded">
+  <img
+    src="https://images.pexels.com/photos/29431460/pexels-photo-29431460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt={title}
+    class="rounded rounded-b-none"
+  />
+  <div class="flex flex-col gap-2 p-3">
+    <h2 class="text-2xl font-bold text-orange-500">{title}</h2>
+    <p class="text-lg text-amber-100">{description}</p>
+    <p class="text-zinc-300 text-sm">
+      {content}
+    </p>
+    <p class="text-stone-300">07/01/2025 - 20 min read</p>
+  </div>
+</article>
