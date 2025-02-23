@@ -1,9 +1,27 @@
 ---
 import NavBar from "./NavBar.astro";
-
 ---
 
-<header class="flex justify-between items-center bg-slate-800 text-white px-6 py-4 m-auto">
-    <h1 class="text-xl"><a href="/">Moontibit</a></h1>
-    <NavBar/>
+<header
+  class="flex justify-between items-center bg-slate-800 text-white py-4 m-auto relative"
+>
+  <h1 class="text-xl pl-2 sm:pl-5"><a href="/">Moontibit</a></h1>
+  <div id="menu-button" class="static sm:hidden pr-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+  </div>
+  <NavBar />
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let isActive = false;
+    const button = document.getElementById("menu-button");
+
+    button?.addEventListener("click", () => {
+      isActive = !isActive;
+      document.querySelector("nav")?.classList.toggle("hidden", !isActive);
+    });
+  });
+</script>
